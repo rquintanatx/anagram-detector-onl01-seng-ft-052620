@@ -10,7 +10,7 @@ class Anagram
     binding.pry
     match_array.select do |maybe_match| 
       maybe_array = maybe_match.split("").sort 
-      maybe_array == @word.split.sort
+      maybe_array == @word.split("").sort
     end 
   end 
   
